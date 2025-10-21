@@ -53,6 +53,6 @@ pkg1::common_generic
 ```
 
 As long as all packages using `pkg1::common_generic` register their methods with this generic, packages work seamlessly together.
-
+Packages can also reexport the same wrapper, possibly with the same name as the generic itself.
 Of course, this solution is not very aesthetic and adds another unnecessary call.
-I think at the very least this should be documented, as it's not completely obvious and resulting bugs will not be caught in unit tests, unless the packages reexporting the same generic depend on each other as well.
+I think at the very least it would be great to document this as the recommended way to reexport S7 generics as it's not completely obvious and resulting bugs will not be caught in unit tests, unless the packages reexporting the same generic depend on each other as well.
