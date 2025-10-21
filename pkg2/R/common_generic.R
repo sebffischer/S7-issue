@@ -1,12 +1,13 @@
 #' @export
 class_pkg2 <- S7::new_class("class_pkg2")
 
-S7::method(pkg1::common_generic, class_pkg2) <- function(x) {
+#' @importFrom pkg1 common_generic
+#' @export
+common_generic <- common_generic
+
+S7::method(common_generic, class_pkg2) <- function(x) {
   print("Calling from pkg2")
 }
-
-#' @export
-common_generic <- pkg1::common_generic
 
 .onLoad <- function(libname, pkgname) {
   S7::methods_register()

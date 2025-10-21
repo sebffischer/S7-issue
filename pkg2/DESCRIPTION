@@ -12,5 +12,3 @@ RoxygenNote: 7.3.2.9000
 Imports:
     S7,
     pkg1
-Remotes:
-    sebffischer/S7-issue/pkg1
