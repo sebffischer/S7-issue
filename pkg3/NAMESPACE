@@ -2,4 +2,5 @@
 
 export(class_pkg3)
 export(common_generic)
+export(common_generic_wrapper)
 importFrom(pkg1,common_generic)

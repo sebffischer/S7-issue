@@ -7,8 +7,10 @@ S7::method(common_generic, class_pkg3) <- function(x) {
 }
 
 #' @export
+common_generic <- pkg1::common_generic
+
 #' @export
-common_generic <- function(...) {
+common_generic_wrapper <- function(...) {
   pkg1::common_generic(...)
 }
 
